@@ -16,27 +16,27 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Mc Flutter")),
+      appBar: AppBar(title: const Text("Mc Flutter")),
       body: Container(
-        margin: EdgeInsets.all(10.0),
-        padding: EdgeInsets.all(20.0),
+        margin: const EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(20.0),
         decoration: BoxDecoration(
           border: Border.all(
             color: Colors.black,
             width: 1.0,
           ),
         ),
-        constraints: BoxConstraints.tightFor(),
+        constraints: const BoxConstraints.tightFor(),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(Icons.account_circle, size: 50.0),
+                const Icon(Icons.account_circle, size: 50.0),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+                  children: const [
                     Text(
                       "Flutter McFlutter",
                       style: TextStyle(
@@ -49,12 +49,12 @@ class _HomePageState extends State<HomePage> {
                 )
               ],
             ),
-            SizedBox(height: 15.0),
+            const SizedBox(height: 15.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [Text("123 Main Street"), Text("(415) 555-0198")],
+              children: const [Text("123 Main Street"), Text("(415) 555-0198")],
             ),
-            SizedBox(height: 15.0),
+            const SizedBox(height: 15.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                           !_accessibilityIconIsPressed;
                     });
                   },
-                  icon: Icon(Icons.accessibility),
+                  icon: const Icon(Icons.accessibility),
                   color: _accessibilityIconIsPressed
                       ? Colors.indigo
                       : Colors.black,
@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
                       _timerIconIsPressed = !_timerIconIsPressed;
                     });
                   },
-                  icon: Icon(Icons.timer),
+                  icon: const Icon(Icons.timer),
                   color: _timerIconIsPressed ? Colors.indigo : Colors.black,
                 ),
                 IconButton(
@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                       _androidIconIsPressed = !_androidIconIsPressed;
                     });
                   },
-                  icon: Icon(Icons.phone_android),
+                  icon: const Icon(Icons.phone_android),
                   color: _androidIconIsPressed ? Colors.indigo : Colors.black,
                 ),
                 IconButton(
@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                       _iphoneIconIsPressed = !_iphoneIconIsPressed;
                     });
                   },
-                  icon: Icon(Icons.phone_iphone),
+                  icon: const Icon(Icons.phone_iphone),
                   color: _iphoneIconIsPressed ? Colors.indigo : Colors.black,
                 ),
               ],
